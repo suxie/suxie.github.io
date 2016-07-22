@@ -1,5 +1,9 @@
+.navbar-inverse {
+  background-color:#4f94cd;
+  font-color:white
+}
+
 .brand {
-  background-color:blue;
-  font-color:white;
+  font-size:24px;
   font-family: Montserat;
 }
