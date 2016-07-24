@@ -10,6 +10,7 @@
 
 .navbar-inverse .navbar-nav>li>a {
   color:#c6e2ff;
+  font-family:Montserrat;
 }
 
 .navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
