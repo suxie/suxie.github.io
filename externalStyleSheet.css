@@ -1,3 +1,7 @@
+.navbar {
+  min-height:100px;
+}
+
 .navbar-custom {
   background-color:#4f94cd;
   background-image:none;
