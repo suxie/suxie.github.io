@@ -8,8 +8,8 @@
   color:#fff;
 }
 
-.navbar-inverse .navbar-text {
-  color:#63b8ff;
+.navbar-nav>li>a{
+  color:#9d9d9d;
 }
 
 
