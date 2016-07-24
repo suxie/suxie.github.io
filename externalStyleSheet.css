@@ -4,9 +4,15 @@
   border-color:#4f94cd;
 }
 
-.navbar-inverse .navbar-brand{
+.navbar-inverse .navbar-brand {
   color:#fff;
 }
+
+.navbar-inverse .navbar-text {
+  color:#63b8ff;
+}
+
+
 
 .brand {
   font-size:24px;
