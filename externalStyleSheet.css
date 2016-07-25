@@ -26,17 +26,11 @@
   font-family: 'Oswald', sans-serif;
 }
 
-.col-center {
-   float: none;
-   margin-right: auto;
-   margin-left: auto;
-}
-
 body {
   margin-top: 125px;
 }
 
 .col-custom {
-  padding-right:5px;
-  padding-left:5px;
+  margin-left:5%;
+  margin-right:5%;
 }
