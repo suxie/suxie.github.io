@@ -30,12 +30,11 @@ body {
   margin-top: 120px;
 }
 
-.col-custom {
-  margin-left:5%;
-  margin-right:5%;
-}
-
 .row {
   margin-top:15px;
   margin-bottom:15px;
+}
+
+.row-special {
+  margin-top:-15px;
 }
