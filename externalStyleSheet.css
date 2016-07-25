@@ -31,10 +31,19 @@ body {
 }
 
 .row {
-  margin-top:15px;
-  margin-bottom:15px;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 
 .row-lilies {
   margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.row-orchids {
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-bottom:0px;
 }
