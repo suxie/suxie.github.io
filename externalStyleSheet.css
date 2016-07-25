@@ -35,6 +35,11 @@ body {
   margin-bottom:15px;
 }
 
-.row-special {
+.row-lilies {
   margin-top:-15px;
+}
+
+.row-orchids {
+  margin-left:15px;
+  margin-right:15px;
 }
