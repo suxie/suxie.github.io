@@ -17,6 +17,10 @@
   font-family:'Montserrat', sans-serif;
 }
 
+.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
+  color:#fff;background-color:#63b8ff
+}
+
 .brand {
   font-size:36px;
   font-family: 'Oswald', sans-serif;
