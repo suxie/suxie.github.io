@@ -15,6 +15,7 @@
 .navbar-inverse .navbar-nav>li>a {
   color:#c6e2ff;
   font-family:'Montserrat', sans-serif;
+  font-size:24px;
 }
 
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
@@ -22,7 +23,7 @@
 }
 
 .brand {
-  font-size:46px;
+  font-size:55px;
   font-family: 'Oswald', sans-serif;
 }
 
