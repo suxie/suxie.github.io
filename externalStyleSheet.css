@@ -25,6 +25,7 @@
 body {
   margin-top: 50px;
   position: relative;
+  height:100%;
 }
 
 .row {
