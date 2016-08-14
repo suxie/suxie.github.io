@@ -5,7 +5,7 @@
 .navbar-custom {
   background-color:#5B9BD5;
   background-image:none;
-  border-color:#4f94cd;
+  border:0px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -17,11 +17,7 @@
   font-family:'Montserrat', sans-serif;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover{
-  color:#fff;background-color:#63b8ff
-}
-
-.navbar-inverse .navbar-nav>.active{
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
   color:#fff;background-color:#63b8ff
 }
 
