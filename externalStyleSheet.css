@@ -82,6 +82,7 @@
 .brand {
   font-size:40px;
   font-family: 'Oswald', sans-serif;
+  padding-top:10px;
 }
 
 .navbar-nav .nav-item {
