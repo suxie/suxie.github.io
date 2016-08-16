@@ -105,8 +105,10 @@
 }
 
 body {
-  height:100%;
   margin-top:125px;
+  position: relative;
+  height:100%;
+  overflow-y:scroll;
 }
 
 .row {
@@ -138,10 +140,4 @@ hr {
   margin-bottom:30px;
   margin-left:0px;
   margin-right:0px;
-}
-
-.scrollspy {
-  position: relative;
-  height:100%;
-  overflow-y:scroll;
 }
