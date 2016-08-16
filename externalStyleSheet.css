@@ -33,7 +33,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .nav-link.active:focus,
 .nav-pills .nav-link.active:hover {
-  color:#fff;cursor:default;background-color:#63b8ff
+  color:#fff;cursor:pointer;background-color:#63b8ff
 }
 
 .navbar-collapse {
