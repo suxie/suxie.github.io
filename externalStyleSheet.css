@@ -83,6 +83,10 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.navbar-nav .nav-item {
+  padding-top:15px;
+}
+
 body {
   margin-top: 50px;
   height:100%;
