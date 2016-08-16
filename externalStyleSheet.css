@@ -12,7 +12,7 @@
   color:#fff;
 }
 
-.nav-pills .nav-item { 
+.nav-pills .nav-item>a{ 
   float:left
   color:#c6e2ff;
   font-family:'Montserrat', sans-serif;
