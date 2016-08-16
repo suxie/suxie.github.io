@@ -15,7 +15,7 @@
 .navbar-inverse .navbar-nav>li>a {
   color:#c6e2ff;
   font-family:'Montserrat', sans-serif;
-  font-size:20;
+  font-size:25;
 }
 
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
@@ -89,7 +89,7 @@
 }
 
 body {
-  margin-top: 150px;
+  margin-top: 125px;
   height:100%;
 }
 
