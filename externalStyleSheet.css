@@ -90,7 +90,6 @@
 }
 
 body {
-  margin-top: 125px;
   height:100%;
 }
 
@@ -127,4 +126,8 @@ hr {
 
 .scrollspy {
   position: relative;
+}
+
+#art {
+  margin-top: 125px;
 }
