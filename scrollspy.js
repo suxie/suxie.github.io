@@ -2,7 +2,7 @@
 //source:http://jsfiddle.net/mekwall/up4nu/
 $(document).ready(function(){
 var lastId,
-    topMenu = $("#myNavbar"),
+    topMenu = $("#top-menu"),
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
     menuItems = topMenu.find("a"),
