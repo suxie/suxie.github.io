@@ -155,7 +155,8 @@ h1 {
   font-family:'Montserrat', sans-serif;
   size:14px;
   color:#808080;
-  margin-top:12px;
+  margin-top:18px;
+  margin-right:12px;
 }
 
 p {
@@ -163,4 +164,5 @@ p {
   font-family:'Montserrat', sans-serif;
   size:12px;
   color:#808080;
+  margin-right:12px;
 }
