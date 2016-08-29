@@ -1,4 +1,4 @@
 # suxie.github.io
-A Portfolio :))
+Portfolio
 <br/>
 Hello college please accept me
