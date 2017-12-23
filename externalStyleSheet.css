@@ -151,6 +151,10 @@ hr {
   padding-bottom:30px;
 }
 
+.header {
+  background-color:#5B9BD5;
+}
+
 h1 {
   text-align:right;
   font-family:'Montserrat', sans-serif;
