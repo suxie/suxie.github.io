@@ -163,6 +163,14 @@ hr {
   top:50%;
 }
 
+.subtitle {
+  font-size:60px;
+  font-family:'Raleway';
+  color:white;
+  position:absolute;
+  top:50%;
+}
+
 h1 {
   text-align:right;
   font-family:'Montserrat', sans-serif;
