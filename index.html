@@ -11,13 +11,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
   integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="externalStyleSheet.css">
-  <link rel="shortcut icon" href="umbrella.ico">
+  <link rel="shortcut icon" href="LogoBlue.ico">
 
   <!--Google Fonts:-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
 
 <style>
-  #fade {
+  #fade #link {
     opacity: 1.0;
     -o-transition: opacity 0.2s ease-in-out;
     -ms-transition: opacity 0.2s ease-in-out;
@@ -26,7 +26,7 @@
     transition: opacity 0.2s ease-in-out;
 }
 
-  #fade:hover {
+  #fade #link:hover {
     opacity: 0.75;
     -o-transition: opacity .2s ease-in-out;
     -ms-transition: opacity .2s ease-in-out;
@@ -38,48 +38,47 @@
 </head>
 
 <body data-spy="scroll" data-target="#myNavbar" data-offset="0">
+  <nav class="navbar navbar-fixed-top navbar-custom">
+    <a class="navbar-brand" href="index.html#title">
+      <img src="LogoWhite.png" style="height:60px; padding-top:6px; padding-bottom:5px;"/>
+    </a>
+    <ul id="myNavbar" class="nav nav-pills">
+      <li class="nav-item"> <a class="nav-link" href="#art"> Art </a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#design"> Design </a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#code"> Code </a> </li>
+    </ul>
+  </nav>
+
   <div class="container-fluid">
-    <div class="row header">
+    <div class="row header" id="title">
         <img src="LandingText/title.png" class="title"/>
     </div>
     <div class="row">
-      <div class="col-md-4 col-lg-4">
-        <a href="main.html#design"> <img src="LandingText/design.png" class="icon" id="fade"/> </a>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <a href="main.html#art"> <img src="LandingText/art.png" class="icon" id="fade"/> </a>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <a href="main.html#code"> <img src="LandingText/code.png" class="icon" id="fade"/> </a>
+      <div class="col-sm-12">
+        <h2 class="new">
+          <a href="index.html#design" class="link"> linkedin </a> &ensp; &#8226; &ensp;
+          <a href="index.html#code" class="link"> resume </a>
+        </h2>
       </div>
     </div>
   </div>
-  
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
-  <a class="navbar-brand brand" href="https://suxie.github.io/"> SUSAN XIE </a>
-  <ul id="myNavbar" class="nav nav-pills">
-    <li class="nav-item"> <a class="nav-link" href="#art"> Art </a> </li>
-    <li class="nav-item"> <a class="nav-link" href="#design"> Design </a> </li>
-    <li class="nav-item"> <a class="nav-link" href="#code"> Code </a> </li>
-  </ul>
-</nav>
 
   <div id="art" class="container top">
     <div class="row">
       <div class="col-md-8 col-lg-8 col-sm-12">
-        <a href="Pages/WalkInThePark.html"> 
-          <img src="Samples/ParkSmall.jpg" height=100% width=100%/>
+        <a href="Pages/WalkInThePark.html">
+          <img src="Samples/ParkSmall.jpg" id="link"/>
         </a>
       </div>
       <div class="col-md-4 col-lg-4 col-sm-12">
         <div class="row row-lilies">
           <a href="Pages/Lilies.html">
-            <img src="Samples/flowersLillies.JPG" height=100% width=100%/>
+            <img src="Samples/flowersLillies.JPG" id="link"/>
           </a>
         </div>
         <div class="row row-orchids">
           <a href="Pages/Orchids.html">
-            <img src="Samples/flowersOrchids.JPG" height=100% width=100%/>
+            <img src="Samples/flowersOrchids.JPG" id="link"/>
           </a>
         </div>
       </div>
@@ -87,48 +86,48 @@
     <div class="row">
       <div class="col-md-6 col-lg-6 col-sm-12">
         <a href="Pages/Gypsy.html">
-          <img src="Samples/GypsySmall.JPG" height=100% width=100%/>
+          <img src="Samples/GypsySmall.JPG" id="link"/>
         </a>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-12">
         <a href="Pages/Girl.html">
-          <img src="Samples/GirlSmall.JPG" height=100% width=100%/>
+          <img src="Samples/GirlSmall.JPG" id="link"/>
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 col-lg-12 col-sm-12">
         <a href="Pages/FatherTime.html">
-          <img src="Samples/FatherTimeSmall.jpg" height=100% width=100%/>
+          <img src="Samples/FatherTimeSmall.jpg" id="link"/>
         </a>
       </div>
     </div>
   </div>
 
- <div id="design"> 
+ <div id="design">
  <hr>
 
   <div class="container bottom">
     <div class="row">
       <div class="col-md-12 col-lg-12 col-sm-12">
         <a href="Pages/PoisonersCorridor.html">
-          <img src="Samples/Poisoner's Corridor.jpg" height=100% width =100%/>
+          <img src="Samples/Poisoner's Corridor.jpg" id="link"/>
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-7 col-lg-7 col-sm-12">
         <a href="Pages/AllTimeSpace.html">
-          <img src="Samples/AllTimeSpacePosterSmall.jpg" height=100% width=100%/>
+          <img src="Samples/AllTimeSpacePosterSmall.jpg" id="link"/>
         </a>
       </div>
       <div class="col-md-5 col-lg-5 col-sm-12">
         <a href="Pages/TSAWebmaster.html">
-          <img src="Samples/TSA-Webmaster.jpg" height=100% width=100%/>
+          <img src="Samples/TSA-Webmaster.jpg" id="link"/>
         </a>
         <div class="row row-website">
           <a href="Pages/Kamikaze.html">
-            <img src="Samples/website.PNG" height=100% width=100%/>
+            <img src="Samples/website.PNG" id="link"/>
           </a>
         </div>
       </div>
@@ -136,39 +135,39 @@
     <div class="row">
       <div class="col-md-5 col-lg-5 col-sm-12">
         <a href="Pages/Brochure.html">
-          <img src="Samples/Brochure.jpg" height=100% width=100%/>
+          <img src="Samples/Brochure.jpg" id="link"/>
         </a>
       </div>
       <div class="col-md-7 col-lg-7 col-sm-12">
         <a href="Pages/CEA.html">
-          <img src="Samples/CEA.jpg" height=100% width=100%/> 
+          <img src="Samples/CEA.jpg" id="link"/>
         </a>
-      </div>  
+      </div>
     </div>
     <div class="row">
       <div class="col-md-6 col-lg-6 col-sm-12">
         <a href="Pages/Matchmaker.html">
-          <img src="Samples/Matchmaker.jpg" height=100% width=100%/>
+          <img src="Samples/Matchmaker.jpg" id="link"/>
         </a>
         <div class="row row-website">
           <a href="Pages/PillPal.html">
-            <img src="Samples/PillPalSmall.jpg" height=100% width=100%/>
+            <img src="Samples/PillPalSmall.jpg" id="link"/>
           </a>
         </div>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-12">
         <a href="Pages/Schedule.html">
-          <img src="Samples/Schedule.jpg" height=100% width=100%/>
+          <img src="Samples/Schedule.jpg" id="link"/>
         </a>
         <div class="row row-website">
           <a href="Pages/Cards.html">
-            <img src="Samples/Card.jpg" height=100% width=100%/>
+            <img src="Samples/Card.jpg" id="link"/>
           </a>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
-   
+
   <div id="code">
     <hr>
 
