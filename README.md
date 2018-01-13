@@ -1,2 +1,2 @@
 # suxie.github.io
-Portfolio
+This website was written using HTML and CSS, based on a framework provided by Bootstrap. 
