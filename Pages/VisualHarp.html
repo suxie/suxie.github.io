@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> My Portfolio </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+  integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../externalStyleSheet.css">
+  <link rel="shortcut icon" href="../LogoBlue.ico">
+
+  <!--Google Fonts:-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-custom">
+    <div style="display:inline-block">
+      <a href="../index.html">
+        <img src="../LogoWhite.png" class="navbar-brand d-inline-block" style="height:60px; padding-top:6px;"/>
+      </a> <ul id="myNavbar" class="nav nav-pills">
+        <li class="nav-item"> <a class="nav-link" href="../index.html#art"> Art </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../index.html#design"> Design </a> </li>
+        <li class="nav-item"> <a class="nav-link active" href="../index.html#code"> Code </a> </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container top" style="margin-top:60px; padding-bottom:60px;">
+    <div class="d-md-inline-flex row row-orchids">
+      <div class="col-lg-7 col-12" id='video_box'>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLcO71nTJ8V7_XO_MKpkpQKs6VFwocvzHP" id='video'
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="col-lg-5 col-12">
+        <h1 style="text-align:left"> <b> Harp </b> : Java </h1>
+        <p style="text-align:left">
+          This program transforms the user's keyboard into a harp. As notes
+          are played, circles are drawn on the screen to provide a visual effect.
+          The harp sound is simulated using a ring buffer data structure and the
+          Karplus-Strong algorithm. The visuals are provided using the PennDraw library,
+          which can be found <a href="http://www.cis.upenn.edu/~cis110/15fa/PennDraw.java">here</a>.
+          The notes range from Concert A (440.0 Hz), which corresponds to 'q', to
+          the A three octaves above it, which corresponds to ' ' (space bar).
+        </p>
+        <p style="text-align:left"> The first video in the playlist shows all the notes typed
+          once in ascending order. In the Interactions panel, there is a live feed of
+          which note is being pressed to go along with the sound and visual.
+        </p>
+        <p style="text-align:left">
+          The second video shows a sample of a song being played on the digital harp.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
