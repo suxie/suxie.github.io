@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../Logo.ico">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+	<!--CSS-->
+	<style>
+	.snake {
+		position: relative;
+		height:100%;
+		overflow-y:hidden;
+		overflow-x:hidden;
+		background-image: url(Code/Snake.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.harp {
+		position: relative;
+		height:100%;
+		overflow-y:hidden;
+		overflow-x:hidden;
+		background-image: url(Code/header_harp_img.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.catdog {
+		position: relative;
+		height:100%;
+		overflow-y:hidden;
+		overflow-x:hidden;
+		background-image: url(Code/header_catdog_img.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	</style>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../index.html">
+			<img src="../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="Art.html"> Traditional Art </a> 
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="Design.html"> Graphic Design </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="#"> Code </a>
+						</li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../index.html">
+			<img src = "../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="Art.html"> Traditional Art </a> 
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="Design.html"> Graphic Design </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="#"> Code </a>
+						</li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> Portfolio &nbsp; &#8250; &nbsp; <a href="#"> Code </a> </h2>
+		</div>
+
+		<div class="container"> 
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="snake">
+						<a href="Code/Snake/project.html"> 
+							<img id="fade" src="Code/header_snake.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-padding">
+					<div class="harp">
+						<a href="Code/Harp/project.html"> 
+							<img id="fade" src="Code/header_harp.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+
+</body>
+</html>
