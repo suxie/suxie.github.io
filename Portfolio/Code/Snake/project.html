@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Traditional Art </a> 
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Design.html"> Graphic Design </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Traditional Art </a> 
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Design.html"> Graphic Design </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Code.html"> Code </a>
+						</li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Snake </a> 
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row" style="margin-bottom:0px;">
+				<div class="col-lg-7 col-12 video">
+					<iframe width="560" height="349" src="https://www.youtube.com/embed/P6L9bbbMQr8?autoplay=1"
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen style="padding-bottom:30px;">
+					</iframe>
+				</div>
+				<div class="col-lg-5 col-12 col-padding" style="padding-left:30px; margin-top:0px;">
+					<h1> <b> Snake </b> : Java </h1>
+					<p style="text-align:left">
+						This program is a version of the classic game, Snake, in which a snake
+						controlled by the user's keyboard is navigated around the screen ('A' moves left,
+						'D' moves right, 'W' moves up, and 'S' moves down) to eat a series of bits.
+						The user loses if the snake crashes into itself or the edge of the screen.
+						The graphical interface is created with the PennDraw library, available
+						<a href="http://www.cis.upenn.edu/~cis110/15fa/PennDraw.java">here</a>.
+						The snake always starts out moving towards the right from a random position on
+						the left side of the screen, and the food is always randomly generated. A high score
+						table is shown at the beginning of the game with dummy scores, and as the
+						user plays, new high scores are added so that the top high scores are always displayed
+						in descending order.
+					</p>
+					<p style="text-align:left"> Each point is drawn as a "bit" object, and these
+						bits are combined in an array list to form a "snake" object. The "gameboard" is
+						treated as a grid, where the snake's body and the food being consumed is treated as
+						points on the grid. High scores are sorted using comparators and
+						the Java Collections library.
+					</p>
+				</div>
+			</div>
+			<div class="row" style="margin-top:0px">
+				<div class="col-12" style="padding-left:30px;">
+					<p style="text-align:left"> The video shows the game being played with all of the
+					audio-visual components that were added for greater game enjoyment. A live feed of
+					the keys being typed can be seen in the Interactions panel in the Java compiler.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
