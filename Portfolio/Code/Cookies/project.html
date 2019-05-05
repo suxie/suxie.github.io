@@ -11,6 +11,7 @@
 	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../../externalStyleSheet.css">
 	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
 	
 	<!--Google Fonts:-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
@@ -18,26 +19,6 @@
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-
-	<!--CSS-->
-	<style>
-
-	.f1tenth {
-		position: relative;
-		height:100%;
-		overflow-y:hidden;
-		overflow-x:hidden;
-		background-image: url(header_landing.JPG);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-
-	</style>
 
 </head>
 
@@ -63,10 +44,10 @@
 							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
@@ -118,32 +99,59 @@
 	<div class="main">
 		<div class="menu"> 
 			<h2> 
-				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Web.html"> Web Dev </a> 
-				&nbsp; &#8250; &nbsp; <a href="#"> F1tenth </a> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> import_cookies </a> 
 			</h2>
 		</div>
-
-		<div class="container"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> import_cookies </b> : Python </h1>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-12">
-					<div class="f1tenth">
-						<a href="http://f1tenth.org/" target="_blank"> 
-							<img id="fade" src="../enter_site.png"/>
-						</a>
+					<p>
+						This project is a script I wrote in Python to mass produce chocolate chip cookies. 
+						I came up with the idea for the script when I was modeling a bakery scene, and realized
+						making a huge tray of 50 or more chocolate chip cookies would actually a very long time
+						to model well. To speed up the process, the script randomly places chocolate chips within 
+						the cookie object.
+					</p>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom:0px;">
+				<div class="col-12">
+					<div class="video">
+						<iframe src="https://player.vimeo.com/video/334127937?autoplay=1" width="560" height="349" frameborder="0" 
+						webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container" style="margin-bottom:50px"> 
-			<p> This website was built and designed in collaboration with one other student. I am responsible
-			for the landing page (home page), the Build page, the Code page (still under construction; will launch
-			at a later date), the Crew page, and the Navbar and "master" stylesheet used throughout the
-			site (each page also has its own CSS). I have contributed to all pages on the site. 
-			</p>
-			<p> Before working on the site, I also helped do a complete rebrand of F1tenth, creating a 
-			more elegant and clean logo and color scheme, and going from there to build the website.
-			For more information on the F1tenth project itself, please look at the site above. 
-			</p>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> I used two third party Maya packages: maya.cmds and pymel.core, 
+						I used the Python packages random and functools. I used <i>random</i> to randomly generate vertex positions, 
+						chocolate chip positions, chocolate chip sizes, and chocolate chip angles. This data was used to create and
+						place each chip's geometry. I grabbed three parameters- number of chips, size (decimal value referring to scale 
+						relative to cookie, and the cookie object selected- from the user using a pop-up user interface window, and I 
+						used <i>functools</i> to apply these parameters in a function to execute the script.
+					</p>
+					<p> In order to get some chips embedded inside the cookie, the method also creates a 
+						hidden piece of cookie geometry within the selected cookie that the chips are constrained to. 
+						Each of the chocolate chips are created as separate objects with subtle differences in their geometries, 
+						and each "set" of chocolate chips created is automatically grouped and organized. 
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12" style="margin-bottom:15px; text-align:center">
+					<a href="chocolate_chips.py" target="_blank">
+						<img width=50vw vspace="10" src="../download.svg"/> <br/>
+						download code
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -161,6 +169,9 @@
 			}
 		});
 	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>
