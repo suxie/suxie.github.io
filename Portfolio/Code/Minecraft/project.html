@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Mini Minecraft </a> 
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> Mini Minecraft </b> : C++ </h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>
+            As a final project in a computer graphics class, two of my friends and I 
+            worked together to create a custom, underwater version of Minecraft. To achieve this, 
+            we each worked on a portion of the game using C++ and the OpenGL pipeline / GLSL. 
+            I worked on <a href="#engine">game engine updates</a>, 
+            <a href="#player">player physics</a>, 
+            <a href="#multi">multithreaded terrain generation</a>, 
+            <a href="#gui">basic GUI and inventory</a>, 
+            <a href="#post">post-process shading effects,</a> 
+            and <a href="#sound"> sound.</a>
+					</p>
+				</div>
+      </div>
+			<div class="row" style="margin-bottom:0px;">
+				<div class="col-12">
+					<div class="video">
+						<iframe src="https://player.vimeo.com/video/378309509?autoplay=1" width="560" height="349" frameborder="0" 
+						webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header"> <b>
+          <h2 style="color:#5B9BD5" id="engine">
+            GAME ENGINE UPDATE &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            The player views the environment through a spherical camera model, where the camera / player is located at 
+            the center of a "sphere" representing all the different directions the player can move; traditional WASD controls 
+            move the player forward, left, backwards, and right, and the position of the mouse determines the direction the 
+            player is facing, much like traditional Minecraft. While the game is open, a tick() function repeatedly 
+            calculates elapsed time and updates player position or the environment as needed. When a movement is required, 
+            a velocity is applied in the correct direction, and the player's new position is calculated as a function of 
+            velocity and time elapsed. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="player">
+            PLAYER PHYSICS &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            As mentioned above, the player's position is calculated as a function of an applied velocity and 
+            elapsed time. In this version of Minecraft, there are two primary modes of transportation: walking / swimming 
+            and flying. Whenever in the first mode, whenever the player moves, the game must check for collisions; the 
+            player should never walk through a block or fall through the ground. I implemented gravity (collision-checking
+            in the y-direction) by simply checking if there was a non-empty block below the player's feet (the player was 
+            set to be 2 blocks high), and I used the same method to check if there is a block above the player's head.
+            In the x-z direction, I used ray-marching to find if there are any blocks in the player's path, and if so, 
+            to stop at a certain distance away. I wanted the player to jump repeatedly when the spacebar was pressed, and so 
+            to accomplish that, I used several booleans to track the player's current state (falling, jumping, grounded, etc). 
+            When the player is moving through water or lava, the player moves slower and 
+            keeps falling until hitting the ground unless the spacebar is pressed. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="multi">
+            MULTITHREADED TERRAIN GENERATION &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            The large terrain, whose heightfield is generated by an FBM noise function, is broken into several smaller pieces 
+            called "chunks." To allow for smoother gameplay and less lag, each chunk is generated only when the player is a 
+            certain distance away from it, and expensive FBM functions are multithreaded so several chunks can generate 
+            efficiently at the same time. As more textures were added, the cost of generating VBOs also started to become a
+            problem, and each chunk stored its VBO data as a set of vectors that were also generated concurrently. Once each 
+            chunk's FBM function and VBO data was correctly calculated by its worker threads, the data was sent from the 
+            main thread to the GPU to render the scene. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="gui">
+            BASIC GUI & INVENTORY &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            When the "I" key is pressed, a simple crosshair display and item bar appear on screen. The player 
+            can choose a blocktype to place by using the right and left arrow keys, and by right-clicking on 
+            the screen, the selected block type will be added to the terrain. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="post">
+            POST-PROCESS SHADING &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            I set up a post-process shading pipeline and frame buffer to add underwater effects to the entire 
+            screen. Throughout the entire game, there is a slight Worley-noise distortion that creates a 
+            stronger illusion of being underwater. Our game also contains underwater rivers and streams as 
+            well as volcanic areas filled with lava. When the user goes under these bodies of water or 
+            into lava, an even stronger distortion and color overlay is applied. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="player">
+            SOUND &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row" style="margin-bottom:50px">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            I added a gentle splashing sound effect that looped with the game engine tick function to create
+            an underwater ambience for the player, and I added various other sound effects throughout the game. 
+            There are sound effects for splashing down into the underwater river, placing blocks, removing 
+            blocks, and walking through lava. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>

@@ -36,7 +36,9 @@
 .nav-pills .nav-link.active,
 .nav-pills .nav-link.active:focus,
 .nav-pills .nav-link.active:hover {
-	color:#fff;cursor:pointer;background-color:#63b8ff
+	color:#fff;
+	cursor:pointer;
+	background-color:#63b8ff
 }
 
 @media (max-width:768px) {
@@ -47,6 +49,8 @@
 		color:#fff;
 		border:0px;
 		outline:0px;
+		margin-top:6px;
+		float:right;
 	}
 
 	.navbar-inverse .navbar-collapse .nav-item .nav-link {
@@ -140,7 +144,7 @@
 		font-size:1.4vw;
 		padding-top:3%;
 		margin-left:-5%;
-		margin-right:-5&;
+		margin-right:-5%;
 	}
 
 	.bottom {
@@ -162,6 +166,7 @@
 	.navbar-sidebar {
 		width: 20vw;
 	}
+
 	.navbar-brand {
 		display:block;
 		margin-left:auto;
@@ -298,7 +303,7 @@ button:hover {
 	height:100%;
 	width:100%;
 	z-index:0;
-	opacity:1.0
+	opacity:1.0;
 	-o-transition: opacity 0.1s ease-in-out;
 	-ms-transition: opacity 0.1s ease-in-out;
 	-moz-transition: opacity 0.1s ease-in-out;
@@ -313,6 +318,13 @@ button:hover {
 	-moz-transition: opacity 0.1s ease-in-out;
 	-webkit-transition: opacity 0.1s ease-in-out;
 	transition: opacity 0.1s ease-in-out;
+}
+
+.models {
+	height:100%;
+	width:100%;
+	z-index:0;
+	opacity:1.0;
 }
 
 #fade {
@@ -342,18 +354,18 @@ button:hover {
 	overflow-y:scroll;
 	overflow-x:hidden;
 	background-image: url(WebBackground.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .bio {
@@ -463,6 +475,11 @@ a:focus {
 	width:100%;
 	height:100%;
 	border:none;
+}
+
+.min-header {
+	margin-top:45px;
+	margin-left:30px;
 }
 
 ::-webkit-scrollbar {

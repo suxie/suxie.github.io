@@ -37,21 +37,21 @@
 				</button>
 				<div class="collapse show navbar-collapse" id="portfolio">
 					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
 						<li class="nav-item"> 
 							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
 						</li>
 						<li class="nav-item"> 
 							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
-						</li>
-						<li class="nav-item">
+						</li> -->
+						<!-- <li class="nav-item">
 							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</ul>
@@ -75,21 +75,21 @@
 				</button>
 				<div class="collapse navbar-collapse" id="dropdown">
 					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
 						<li class="nav-item"> 
 							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
 						</li>
 						<li class="nav-item"> 
 							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
-						</li>
-						<li class="nav-item">
+						</li> -->
+						<!-- <li class="nav-item">
 							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</ul>
@@ -112,11 +112,11 @@
 			<div class="row">
 				<div class="col-12">
 					<p>
-						This project is a script I wrote in Python to mass produce chocolate chip cookies. 
-						I came up with the idea for the script when I was modeling a bakery scene, and realized
-						making a huge tray of 50 or more chocolate chip cookies would actually a very long time
-						to model well. To speed up the process, the script randomly places chocolate chips within 
-						the cookie object.
+						This project is a script I wrote in Python for mass-producing chocolate chip cookies. 
+						I came up with the idea for the project while modeling a bakery scene&ndash; I wanted to model
+						a huge tray of 50 or more chocolate chip cookies and realized doing so woulc actually require 
+						a tremendous amount of time to do well. To help with the process, when a sphere 
+						(the cookie) is selected, the script randomly places chocolate chips within the object.
 					</p>
 				</div>
 			</div>
@@ -130,17 +130,18 @@
 			</div>
 			<div class="row">
 				<div class="col-12" style="padding-left:30px;">
-					<p> I used two third party Maya packages: maya.cmds and pymel.core, 
-						I used the Python packages random and functools. I used <i>random</i> to randomly generate vertex positions, 
-						chocolate chip positions, chocolate chip sizes, and chocolate chip angles. This data was used to create and
-						place each chip's geometry. I grabbed three parameters- number of chips, size (decimal value referring to scale 
-						relative to cookie, and the cookie object selected- from the user using a pop-up user interface window, and I 
-						used <i>functools</i> to apply these parameters in a function to execute the script.
+					<p> I used two third party Maya packages: <i>maya.cmds</i> and <i>pymel.core</i>, as well as the Python 
+						packages <i>random</i> and <i>functools</i>. I used <i>random</i> to randomly generate vertex positions, 
+						chocolate chip positions, chocolate chip sizes, and chocolate chip angles, creating variation among the 
+						different chips. To parameterize chip generation, I used three factors&ndash; number of chips, chip size 
+						(decimal value referring to scale of chip relative to cookie), and the actual location of the cookie object 
+						selected&ndash; from the user using a pop-up user interface window. I used <i>functools</i> to apply 
+						these parameters in a function to execute the script.
 					</p>
 					<p> In order to get some chips embedded inside the cookie, the method also creates a 
 						hidden piece of cookie geometry within the selected cookie that the chips are constrained to. 
 						Each of the chocolate chips are created as separate objects with subtle differences in their geometries, 
-						and each "set" of chocolate chips created is automatically grouped and organized. 
+						and each "set" of chocolate chips created is automatically organized into a group. 
 					</p>
 				</div>
 			</div>

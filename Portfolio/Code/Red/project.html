@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+	<!--CSS-->
+	<style>
+
+	.red {
+		position: relative;
+		height:100%;
+		overflow-y:hidden;
+		overflow-x:hidden;
+		background-image: url(cover.JPG);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	</style>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html#games"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Red </a> 
+			</h2>
+		</div>
+
+		<div class="container"> 
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> Red </b> : JavaScript </h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="red">
+						<a href="http://suxie-red.herokuapp.com/" target="_blank"> 
+							<img id="fade" src="../../Web/enter_site.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h1 style="text-align:center; margin:auto; padding:5px;"> 
+					Please note: the site may take a few seconds to load!</h1>
+			</div>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<p> This app is a simple endless runner game built using JavaScript's <i>three.js</i> library.
+				The user plays as a Little Red Riding Hood character sledding through the woods, using 
+				the left and right arrows to avoid trees and the spacebar to jump over rocks. The opening page 
+				contains a highscore chart that is maintained using MongoDB. 
+			</p>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<div class="row">
+				<div class="col-12">
+					<img width=100% src="enter.gif">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<img width=100% src="gameplay.gif">
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<p> At any point in the game, the user can pause the game and exit, or press the play button 
+				to continue. </p>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<img width=100% src="pause.gif">
+				</div>
+				<div class="col-6 col-md-6">
+					<img width=100% src="exit.gif">
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<p> As the game goes on, the speed trees and rocks are generated in the path of the player
+				increases. Crashing into a tree or failing to jump over a rock causes the user to lose. 
+				If the user wants a position on the high score chart, they simply need to enter their name 
+				when the GAMEOVER screen appears. </p>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<img width=100% src="score.gif">
+				</div>
+				<div class="col-12 col-md-6">
+					<img width=100% src="final.gif">
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-bottom:50px"> 
+			<p> Most assets were created primitively in <i>three.js</i>, but the player character was 
+				modeled in Maya and later used <i>three.js</i> to import it. </p>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+
+</body>
+</html>
