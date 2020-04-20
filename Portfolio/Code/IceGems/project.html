@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Ice Gems </a> 
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> Ice Gems </b> : Unreal Game Engine 4 (Blueprint) </h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>
+						As part of a game design class, two of my friends and I designed and built a level
+						of an inertia-based ice skating game that we named "Ice Gems." You play as a futuristic hiker 
+						in the Himalayan mountains. You are exploring the caves, but without ice shoes, you must rely 
+						on the fuel in your jetpack to propel you around. The caves are filled with monsters that block
+						you and gems that give you more fuel, and your goal is to get to the back of the cave. You can 
+						navigate through the cave with standard WASD controls, and you can shoot at monsters by clicking 
+						the screen. I worked on <a href="#gem">gem collection</a>, 
+            <a href="#fuel">fuel updates</a>, 
+            <a href="#UI">game UI</a>, 
+            <a href="#hiker">hiker visuals and effects</a>, 
+            and some <a href="#sound"> sound effects.</a>
+					</p>
+				</div>
+      </div>
+			<div class="row" style="margin-bottom:0px;">
+				<div class="col-12">
+					<div class="video">
+						<iframe src="https://player.vimeo.com/video/409841612?autoplay=1" width="560" height="349" frameborder="0" 
+						webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header"> <b>
+          <h2 style="color:#5B9BD5" id="gem">
+            GEM COLLECTION &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						The player can collect the gems by either colliding with the gem blueprint object or by pressing the spacebar 
+						when the gem is within range. Gems "glow" when within a certain radius of the player, which is achieved by 
+						an unbounded post-processing effect in the scene that is attached to a custom highlight material. Collecting a gem 
+						triggers an event that increases the player's fuel level by +10.   
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="fuel">
+            FUEL UPDATES &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						The player starts the game with a full fuel bar of 300 / 300. As mentioned above, gem collection triggers a fuel 
+						increase, and all keypress and mouse click events trigger a fuel decrease. Hitting spacebar to collect gems and 
+						clicking the screen to shoot has a very low fuel cost of -1, while movements (WASD keys) decrease fuel level based on 
+						how long the key is held down. Moving forward or backwards with W and S costs the most fuel (calculated by the length
+						of time the key is held down multiplied by a factor of 10), while turning left and right costs about half as much. 
+						There are periodic monster roars as well (described more under <a href="#hiker">hiker visuals</a> below) that trigger a 
+						camera shake and a fuel decrease of -5. The player loses when both the fuel level and velocity drop to 0, and the 
+						player wins when defeating the largest monster at the back of the cave. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="UI">
+            GAME UI &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						I created the game levels page and all the in-game UI, including a menu that comes up when the escape key is pressed, 
+						the gameover and win screens, and the in-game fuel bar. In order to properly visualize the decreasing fuel while a 
+						key is pressed in real-time, the fuel variable is checked on every tick, and the bar is updated whenever the fuel 
+						level changes.  
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="hiker">
+            HIKER VISUALS: character, jetpack flames, monster roars &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						I modeled the hiker character in Maya, and I textured the character in Substance Painter. I created a Blueprint for 
+						the jetpack flames that was attached to a particle simulation, and whenever a key was held down, I created 
+						new instances of those flames behind the character to create a visual of the jetpack being used. Once the key was released, 
+						the jetpack flame instances were deleted from the scene. I also implemented a periodic monster roar that pushes the character 
+						backwards. I set up a timer to trigger the roar after an interval, attached the monster sound to the timer, and 
+						applied a force to the character in the negative direction of the camera's forward vector after the timer went off. 
+						I also used Unreal's camera shake feature to shake the screen every time the character was pushed back and decreased the 
+						player's fuel level by -5. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="sound">
+            SOUND EFFECTS &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;margin-bottom:50px;">
+					<p> 
+            I added the ambient background noise to the game and set up the sounds for the monster roars. 
+					</p>
+				</div>
+      </div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
