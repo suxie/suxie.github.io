@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Cafe Terrace </a> 
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> Cafe Terrace </b> : Unreal Game Engine 4 (Blueprint) </h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>
+						Cafe Terrace is a multiplayer game I worked on with two other classmates based on a painting by 
+						Van Gogh, <a href="https://www.vangoghstudio.com/cafe-terrace-at-night-by-vincent-van-gogh/" target="_blank">
+						<i>Caf&#233; Terrace at Night</i></a>. The game supports two players: each session's host 
+						plays as a waiter at the cafe, and the second player who joins plays as a mouse. As a waiter, your
+						goal is to complete all the restaurant orders as they appear across the top of the screen. There is
+						a critic at the restaurant, and your goal is to keep the critic happy throughout the evening. If you
+						miss five regular customer orders, you lose the game; if you miss a single one of the critic's orders, 
+						you immediately lose. Meanwhile, the mouse is trying to gather crumbs from around the restaurant to
+						bring home to feed his family. The ultimate goal of the mouse is to get the restaurant shut down by 
+						running in view of the critic; the mouse must deliver a certain number of crumb "orders" to his 
+						family before he can run towards the critic. When the waiter is not holding any dishes, she can 
+						switch to holding a broom and sweep up crumbs on the floor to prevent the mouse from reaching his 
+						goal, and if she is close enough to the mouse, she can hit him with the broom to send him back 
+						to his home and force him to lose all the crumbs he is currently holding. I am responsible for 
+						implementing most of the game logic of the game, including the 
+						<a href="#queue">order queues</a>, 
+            <a href="#UI">user interface</a>, 
+            <a href="#waiter">waiter logic</a>, 
+            <a href="#mouse">mouse logic</a>, 
+						and the game's <a href="#sound">sound effects</a>.
+					</p>
+				</div>
+      </div>
+			<div class="row" style="margin-bottom:0px;">
+				<div class="col-12">
+					<div class="video">
+						<iframe src="https://player.vimeo.com/video/419027233?autoplay=1" width="560" height="349" frameborder="0" 
+						webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header"> <b>
+          <h2 style="color:#5B9BD5" id="queue">
+            WAITER AND MOUSE ORDER QUEUES &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						 Orders are generated using a series of timers; every <i>x</i> seconds, a new 
+						 order is generated for the waiter, and a new order is generated for the mouse. The 
+						 timer interval for the waiter orders gets shorter as the game goes longer. 
+						 Each order is randomly generated to be one of 3 food types (ratatouille, soup, 
+						 or baguette for the waiter, and bread, berry, or cheese for the mouse), and 
+						 each of the waiter's orders is also randomly set to one of the tables 1 through 10. 
+						 Each order has an expiration time, and once its timer runs out, that 
+						 order will be considered "missed." Critic orders are generated separately from 
+						 the other waiter orders; they are set for Table 11, and upon expiration, will cause
+						 the waiter to immediately lose (and the mouse to immediately win). The mouse can 
+						 miss orders without consequence, but the waiter will lose after missing 5 customer
+						 orders. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="UI">
+            USER INTERFACE &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						Orders appear across the top of the screen. In the top-left corner of the waiter's in-game 
+						interface, there is a "Current Rating" that acts like the number of lives the waiter currently has.
+						When the rating drops to 0, the waiter has lost. For both the mouse and waiter, the orders 
+						across the top of the screen have a bar showing the time left for the order to be completed, 
+						and when orders are about to expire (10 seconds remaining), the order turns red. If an order is 
+						completed or expires, it disappears from the top of the screen. Along the bottom of the screen
+						for both players is a progress bar showing the number of orders fulfilled vs the total number of 
+						orders needed to win the game: the waiter wins the game after completing 25 orders, and the mouse
+						can run to the critic to shut down the restaurant after completing 20. The mouse has a list 
+						widget on the left side of the screen listing all the crumbs he is currently holding. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="waiter">
+            WAITER LOGIC &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+							The waiter can hold 1 item at a time: either a dish or a broom. The waiter can pick up and put
+							down items using the spacebar. If the waiter is standing within range of a dish to pick-up, the
+							dish glows, and she can pick it up. Once the dish is picked up, the waiter can put down the
+							dish by either delivering it to a table or discarding it in the trash can. Both the tables and 
+							trash can will glow when the waiter is in range. When the waiter is empty-handed, hitting spacebar 
+							will allow her to hold a broom. While the broom is held, the waiter can "sweep up" crumbs 
+							around the restaurant by walking over them. If the mouse is within a certain range of the waiter, 
+							the mouse will glow and the waiter can hit spacebar to hit the mouse and "reset" him back to 
+							his starting corner without any of the food he just collected. Hitting spacebar again while holding 
+							the broom will put the broom away, making the waiter empty-handed, and this will allow her to pick up 
+							a plate once again. 
+					</p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="mouse">
+            MOUSE LOGIC &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+						The mouse can hold five items at a time: whenever he runs over a crumb, that crumb is "collected" and
+						added to the bottom of a list of items on the left side of the screen. The top item is highlighted; 
+						when the mouse tries to collect a sixth crumb, the highlighted item is automatically dropped from his
+						current list of collected crumbs. The mouse can hit spacebar when he is standing near his family, and 
+						this will drop all the crumbs he collected and allow him to "feed" them. Once those crumbs are dropped
+						off, that "order" is considered completed. Every time the mouse is hit by the waiter's broom, he is reset
+						to the bottom left corner where his family is and his carried items are all dropped. To win the game, 
+						after the mouse has completed all his orders, he must run to the critic sitting in the back corner of 
+						the cafe and hit spacebar to climb on to his stand.
+					</p>
+				</div>
+			</div>
+      <div class="row">
+        <div class="min-header" style="margin-top:0px"> <b>
+          <h2 style="color:#5B9BD5" id="sound">
+            SOUND EFFECTS &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;margin-bottom:50px;">
+					<p>
+						I added the looping background track to the game and set up a few sound effects: 
+						a "ding" sound plays when an order from the kitchen is ready, and there is a ticking
+						sound that lines up with the 10-second warning associated with orders expiring.
+					</p>
+				</div>
+      </div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
