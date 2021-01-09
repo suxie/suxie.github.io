@@ -96,6 +96,36 @@
 		left: 0;
 	}
 
+	.pennapps {
+		position: relative;
+		height:100%;
+		overflow-y:hidden;
+		overflow-x:hidden;
+		background-image: url(Web/PennApps/cover.JPG);
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.industry {
+		position: relative;
+		height:100%;
+		overflow-y:hidden;
+		overflow-x:hidden;
+		background-image: url(Web/industry/cover.JPG);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	
 	</style>
 
 </head>
@@ -116,7 +146,7 @@
 				<div class="collapse show navbar-collapse" id="portfolio">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" style="font-size:14px" href="Code.html"> Code </a>
+							<a class="nav-link active" style="font-size:14px" href="#"> Code </a>
 						</li>
 						<li class="nav-item"> 
 							<a class="nav-link" style="font-size:14px" href="3D.html"> Modeling &<br/>Simulation </a> 
@@ -125,7 +155,7 @@
 							<a class="nav-link" style="font-size:14px" href="Art.html"> Art & Design </a> 
 						</li>
 						<!-- <li class="nav-item">
-							<a class="nav-link active" style="font-size:14px" href="#"> Web Dev </a>
+							<a class="nav-link" style="font-size:14px" href="Web.html"> Web Dev </a>
 						</li> -->
 						<!-- <li class="nav-item">
 							<a class="nav-link" style="font-size:14px" href="Progress.html"> In Progress </a>
@@ -154,7 +184,7 @@
 				<div class="collapse navbar-collapse" id="dropdown">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" style="font-size:14px" href="Code.html"> Code </a>
+							<a class="nav-link" style="font-size:14px" href="#"> Code </a>
 						</li>
 						<li class="nav-item"> 
 							<a class="nav-link" style="font-size:14px" href="3D.html"> Modeling & Simulation </a> 
@@ -163,7 +193,7 @@
 							<a class="nav-link" style="font-size:14px" href="Art.html"> Art & Design </a> 
 						</li>
 						<!-- <li class="nav-item">
-							<a class="nav-link" style="font-size:14px" href="#"> Web Dev </a>
+							<a class="nav-link" style="font-size:14px" href="Web.html"> Graphic Design </a>
 						</li> -->
 						<!-- <li class="nav-item">
 							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="Progress.html"> In Progress </a>
@@ -176,27 +206,44 @@
 
 	<div class="main">
 		<div class="menu"> 
-			<h2> Portfolio &nbsp; &#8250; &nbsp; <a href="#"> Web Dev </a> </h2>
+			<h2> Portfolio &nbsp; &#8250; &nbsp; <a href="Art.html"> Art & Design </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Web </a> </h2>
 		</div>
 
-		<div class="container"> 
+		<div class="container" style="margin-bottom:50px"> 
+			
 			<div class="row">
 				<div class="col-12 col-lg-6">
+					<div class="pennapps">
+						<a href="Web/PennApps/project.html"> 
+							<img id="fade" src="Web/header_pennapps.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-padding">
+					<div class="industry">
+						<a href="Web/industry/project.html"> 
+							<img id="fade" src="Web/header_industry.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-12 col-lg-6">
 					<div class="webdesign">
 						<a href="Web/WebDesign/project.html"> 
 							<img id="fade" src="Web/header_web.png"/>
 						</a>
 					</div>
-				</div>
-				<div class="col-12 col-lg-6 col-padding">
+				</div> -->
+				<div class="col-12 col-lg-6">
 					<div class="f1tenth">
 						<a href="Web/f1tenth/project.html"> 
 							<img id="fade" src="Web/header_f1tenth.png"/>
 						</a>
 					</div>
 				</div>
-			</div>
-			<div class="row">
+				<!--
 				<div class="col-12 col-lg-6 col-padding">
 					<div class="blog">
 						<a href="Web/Blog/project.html"> 
@@ -204,6 +251,8 @@
 						</a>
 					</div>
 				</div>
+			</div>
+			<div class="row">
 				<div class="col-12 col-lg-6">
 					<div class="twitter">
 						<a href="Web/Twitter/project.html"> 
@@ -211,8 +260,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
-			<div class="row">
+			-->
 				<div class="col-12 col-lg-6 col-padding">
 					<div class="home">
 						<a href="https://github.com/suxie/suxie.github.io" target="_blank"> 
@@ -221,6 +269,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
