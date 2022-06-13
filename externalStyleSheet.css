@@ -280,6 +280,10 @@ button:hover {
 	padding-bottom:20vh;
 }
 
+.main {
+	margin-bottom:100px;
+}
+
 .main .body {
 	background-color:#fff;
 }
@@ -374,11 +378,15 @@ button:hover {
 	margin-top:3vh;
 }
 
-p {
+p, td, li {
 	text-align:left;
 	font-family:'Montserrat', sans-serif;
 	size:12px;
 	color:#808080;
+}
+
+td {
+	padding:5px;
 }
 
 .d-md-inline-flex {

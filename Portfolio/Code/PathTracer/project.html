@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> Path Tracer </a> 
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> Path Tracer </b> : C++ </h1>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom:0px">
+				<div class="col-12">
+					<p>
+            As part of a college course, I worked on a Monte Carlo path tracer using the physically-based rendering techniques described in 
+						this textbook: <a href="https://www.pbr-book.org/">https://www.pbr-book.org</a>. The final result was a full lighting
+						integrator that incorporated both direct and indirect rays, multiple importance sampling, Russian Roulette ray termination,
+						and global illumination, as well as support for a variety of material types and lights. 
+					</p>
+					<p style="margin-bottom:0px">
+						The following are scenes I generated myself and rendered from this path tracer @ 20x20 samples per pixel and maximum recursion depth of 8:
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-12" style="margin-top:15px">
+					<a href="bubbles_scene.png" data-lightbox="gallery">
+						<img class="img-fluid" src="bubbles_scene.png"/>
+					</a>
+				</div>
+				<div class="col-md-7 col-12" style="margin-top:15px">
+					<a href="fish_scene.png" data-lightbox="gallery">
+						<img class="img-fluid" src="fish_scene.png"/>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<p style="margin-bottom:0px">
+						Additional sample scenes can be found here &mdash; all were rendered using 10x10 samples per pixel and a maximum recursion depth of 5, 
+						and all lights are arealights unless otherwise specified:
+					</p>
+				</div>
+      </div>
+			<div class="row">
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="cornell_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="cornell_Full.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="gradient_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="gradient_Full.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="mirror_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="mirror_Full.png"/>
+					</a>
+				</div>
+			</div>
+      <div class="row">
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="map_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="map_Full.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="twoLights_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="twoLights_Full.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="test_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="test_Full.png"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="glass_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="glass_Full.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="transmit_Full.png" data-lightbox="gallery">
+						<img class="img-fluid" src="transmit_Full.png"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p style="margin-bottom:-10px"><b>Constructive Solid Geometry:</b></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="csgUnion.png" data-lightbox="gallery">
+						<img class="img-fluid" src="csgUnion.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="csgIntersect.png" data-lightbox="gallery">
+						<img class="img-fluid" src="csgIntersect.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="csgDifference.png" data-lightbox="gallery">
+						<img class="img-fluid" src="csgDifference.png"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-12">
+					<p style="margin-top:-10px; text-align:center">Union</p>
+				</div>
+				<div class="col-md-4 col-12">
+					<p style="margin-top:-10px; text-align:center">Intersection</p>
+				</div>
+				<div class="col-md-4 col-12">
+					<p style="margin-top:-10px; text-align:center">Difference</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p style="margin-bottom:-10px"><b>Additional Lights / Cameras:</b></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="thinLens.png" data-lightbox="gallery">
+						<img class="img-fluid" src="thinLens.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="spotLightFull10.png" data-lightbox="gallery">
+						<img class="img-fluid" src="spotLightFull10.png"/>
+					</a>
+				</div>
+				<div class="col-md-4 col-12" style="margin-top:15px">
+					<a href="pointLightFull10.png" data-lightbox="gallery">
+						<img class="img-fluid" src="pointLightFull10.png"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-12">
+					<p style="margin-top:-10px; text-align:center">Thin-Lens Camera (focal length 29.5, lens radius 1.5)</p>
+				</div>
+				<div class="col-md-4 col-12">
+					<p style="margin-top:-10px; text-align:center">Spotlight (max recursion: 10)</p>
+				</div>
+				<div class="col-md-4 col-12">
+					<p style="margin-top:-10px; text-align:center">Pointlight (max recursion: 10)</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p> 
+						You can also find some experiments with real-time rendering 
+						<a href="https://www.shadertoy.com/user/susanxie" target="_blank">here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>

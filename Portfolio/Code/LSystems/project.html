@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Susan Xie </title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Reference Links:-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../../externalStyleSheet.css">
+	<link rel="shortcut icon" href="../../../Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../../../lightbox/css/lightbox.css">
+	
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar Navigation -->
+	<nav class="nav flex-column d-none d-md-flex navbar-sidebar">
+		<a class="navbar-brand" href="../../../index.html">
+			<img src="../../../Logo.png" width="80px"/>
+		</a>
+		<div style="display:block">
+			<ul id="myNavbar" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link" id="portfolio-button"> Portfolio </a> </li>
+				</button>
+				<div class="collapse show navbar-collapse" id="portfolio">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link active" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling &<br/>Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Horizontal Navigation-->
+	<nav class="navbar-top fixed-top d-inline-block d-md-none navbar navbar-inverse">
+		<a class = "navbar-brand" href = "../../../index.html">
+			<img src = "../../../Logo.png" width = "40px"/>
+		</a> 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#about"> About </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../../index.html#demo-reel"> Demo Reel </a> </li>
+				<button class="navbar-toggler" style="padding:0px" type="button" data-toggle="collapse" data-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				</button>
+				<div class="collapse navbar-collapse" id="dropdown">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Code.html"> Code </a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../3D.html"> Modeling & Simulation </a> 
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" style="font-size:14px" href="../../Art.html"> Art & Design </a> 
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px" href="../../Web.html"> Web Dev </a>
+						</li> -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" style="font-size:14px;padding-bottom:10px" href="../../Progress.html"> In Progress </a>
+						</li> -->
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="menu"> 
+			<h2> 
+				Portfolio &nbsp; &#8250; &nbsp; <a href="../../Code.html"> Code </a> 
+				&nbsp; &#8250; &nbsp; <a href="#"> L Systems (in Maya) </a> 
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-padding">
+					<h1> <b> L Systems (in Maya) </b> : Python / C++ </h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>
+            The L Systems used here are from the paper 
+            <a href="http://algorithmicbotany.org/papers/abop/abop.pdf" target="_blank"><i>The Algorithmic Beauty of Plants</i> by 
+            Przemyslaw Prusinkiewicz and Aristid Lindenmayer</a>. The basic drawing commands are listed below: 
+					</p>
+          <table style="margin-left:50px">
+            <tr>
+              <td>F</td>
+              <td>Move forward one step. Draw a segment.</td>
+            </tr>
+            <tr>
+              <td>f</td>
+              <td>Move forward one step. Do not draw a segment.</td>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Rotate around the Y axis by one step.</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Rotate backwards around the Y axis by one step.</td>
+            </tr>
+            <tr>
+              <td>&</td>
+              <td>Rotate around the X axis by one step.</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>Rotate backwards around the X axis by one step.</td>
+            </tr>
+            <tr>
+              <td>\</td>
+              <td>Rotate around the Z axis by one step.</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Rotate backwards around the Z axis by one step.</td>
+            </tr>
+            <tr>
+              <td>_</td>
+              <td>Rotate around the Y axis by 180.</td>
+            </tr>
+            <tr>
+              <td>[</td>
+              <td>Push the current state onto the stack, or SAVE current position.</td>
+            </tr>
+            <tr>
+              <td>]</td>
+              <td>Pop the stack, or SET current position to last saved position.</td>
+            </tr>
+          </table>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header" style="margin-top:10px"> <b>
+          <h2 style="color:#5B9BD5" id="engine">
+            L SYSTEMS IMPLEMENTATION &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            This is a Maya plugin that contains two parts: a python / MEL plugin implementation of L Systems, 
+            and a C++ plugin implementation. The former can be seen in the first 2:09 seconds of the video &mdash; 
+            after activating the plugin item in the menu, a pop-up window appears that takes an L System grammar as input, 
+            either through loading a grammar file (a .txt file containing the grammar) or just typing out the grammar in
+            the window. The number of iterations, default step size, default angle size, must be defined by the user before
+            the L System is generated. 
+					</p>
+          <p>
+            The second implementation takes the same arguments, but because it is built using a C++ node, the parameters
+            can be modified and visualized even after the L System is generated. The number of iterations is tied to the
+            current frame number in Maya, so it "grows" as you move along the timeline. 
+          </p>
+				</div>
+      </div>
+      <div class="row">
+				<div class="col-12">
+					<div class="video">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/719723900?h=a35ab6f69c" 
+            width="640" height="360" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+      </div>
+      <div class="row">
+        <div class="min-header"> <b>
+          <h2 style="color:#5B9BD5" id="player">
+            LSYSTEM INSTANCER &nbsp; &mdash;&mdash;&mdash;&mdash;
+          </h2>
+        </b></div>
+      </div>
+			<div class="row">
+				<div class="col-12" style="padding-left:30px;">
+					<p> 
+            This implementation of L Systems also includes the following additional grammar:</p>
+          <table style="margin-left:50px;">
+            <tr>
+              <td>*</td>
+              <td>Draw a flower.</td>
+            </tr>
+          </table>
+				</div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="padding-left:30px">
+          <p> 
+            There are two main "nodes" (both fully C++ implementation): a <b>randomNode</b> and an <b>instancer</b>.
+          </p>
+          <ul>
+            <li>
+              The randomNode simply takes a piece of geometry and creates a set number of instances (<i>In Num Points</i>) 
+              scattered randomly from within the defined bounds (<i>In Max</i> and <i>In Min</i>).
+            </li>
+            <li>
+              The instancer similarly creates a series of instances from input geometry, but for this particular plugin, 
+              it's used as part of the backend for an L System instancer: one piece of input geometry is used to draw the 
+              main branches of the L System, and the second geometry is drawn whenever we have a flower. 
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="padding-left:30px">
+          <p>
+            There are four different functions supported by this instancer: </p>
+          <ol>
+            <li>
+              <b>RandomNode Default:</b> This creates a polygon sphere and connects it to a randomNode. 
+            </li>
+            <li>
+              <b>RandomNode Custom:</b> This requires the user to select a single object, and throws an error
+		if there is not exactly 1 object selected. This object is then connected to the 
+		randomNode, and the user can edit the properties of the randomNode. 
+            </li>
+            <li>
+              <b>LSystem Default:</b>
+              This creates an LSystem with branches and flowers, which uses a 
+		polygon cube with an instancer for the branches, and a polygon sphere with a 
+		second instancer for the flowers. This has all the functionality of the original
+		LSystem plugin.
+            </li>
+            <li>
+              <b>LSystem Custom:</b>
+              This again creates an LSystem with branches and flowers, but it requires
+		the user to select two objects: the first is used for branches, and the second is
+		used for flowers. This works similarly to the LSystem Default command, but allows
+		the user to swap out the branch and flower geometry. 
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="video">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/719726642?h=6b769a7df6" 
+            width="640" height="360" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+
+	<!-- Custom JavaScript-->
+	<script>
+		$(".main").delay(200).animate({
+			opacity: 1}, 700
+		);
+
+		$('button').click(function() {
+			if ($('#portfolio-button').hasClass('portfolio-active')) {
+				$('#portfolio-button').removeClass('portfolio-active');
+			} else {
+				$('#portfolio-button').addClass("portfolio-active");
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../../lightbox/js/js.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/video_slider.js"></script>
+	<script type="text/javascript" src="../../../lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
