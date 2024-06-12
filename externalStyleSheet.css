@@ -104,6 +104,16 @@
 	  margin-left:0px;
 	  margin-right:0px;
 	}
+    
+    #portfolio-scroll {
+        height:20vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:80vw;
+    }
 }
 
 @media (min-width: 991px) {
@@ -127,7 +137,7 @@
 	}
 
 	.title {
-		font-size:90px;
+		font-size:7vw;
 	}
 
 	.greeting {
@@ -157,6 +167,10 @@
 	.menu {
 		margin-top:30px;
 	}
+    
+    #portfolio-scroll {
+        height:60vh;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -209,6 +223,10 @@
 	  margin-left:0px;
 	  margin-right:0px;
 	}
+    
+    #portfolio-scroll {
+        height:30vh;
+    }
 }
 
 button {

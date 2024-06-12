@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Susan Xie, DMD, digital media design, computer graphics, UPenn,
 		University of Pennsylvania, code, art, design, Pixar, Sony, Imageworks">
-	<meta name="description" content="Hello! My name is Susan, and I am a currently a Render TD at Pixar. 
+	<meta name="description" content="Hello! My name is Susan, and I am TD interested in pipeline and look of picture.
 		This is a collection of some of my work.">
 	<meta name="author" content="Susan Xie">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,78 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	
+    <!--CSS-->
+    <style>
+    #portfolio-scroll p {
+        text-align:center;
+        margin:auto;
+    }
+    
+    .portfolio-links {
+        display:flex;
+        align-items:center;
+    }
+
+    .portfolio-boxes {
+        position: relative;
+        height:100%;
+        overflow-y:hidden;
+        overflow-x:hidden;
+        padding:0px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        opacity:0.8;
+    }
+        
+    .code {
+        background:
+            url(code.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .threeD {
+        position: relative;
+        height:100%;
+        background:
+            url("Portfolio/3D/Succulents/Side_Small.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .art {
+        position: relative;
+        height:100%;
+        background:
+            url("Portfolio/Art/Drawings/Rocket.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .portfolio-links:hover {
+        filter:contrast(120%);
+        backdrop-filter: saturate(120%) opacity(100%) brightness(50%) ;
+        -webkit-backdrop-filter: saturate(120%) opacity(100%) brightness(50%) ;
+    }
+    
+    .portfolio-links {
+        height:100%;
+        width:100%;
+        margin:0px;
+        backdrop-filter: saturate(10%) opacity(80%) brightness(10%) contrast(100%);
+        -webkit-backdrop-filter: saturate(10%) opacity(80%) brightness(10%) contrast(100%);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    </style>
+    
 </head>
 
 <body class="background" data-spy="scroll" data-target="#myNavbar" data-offset="400">
@@ -37,10 +109,12 @@
 			<ul id="myNavbar" class="nav flex-column nav-pills">
 				<li class="nav-item"> <a class="nav-link" href="#about" id="return"> About </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#demo-reel" id="return"> Demo Reel </a> </li>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation">
-					<li class="nav-item"> <a class="nav-link"> Portfolio </a> </li>
+				<button class="navbar-toggler" type="button" data-target="#portfolio" aria-controls="portfolio" aria-expanded="false" aria-label="Toggle navigation"
+                    style="width:100%;padding:0px;border:0px;line-height:1.5">
+                <!-- for clickable: add 'data-toggle="collapse"' -->
+					<li class="nav-item"> <a class="nav-link" href="#portfolio-scroll"> Portfolio </a> </li>
 				</button>
-				<div class="collapse navbar-collapse" id="portfolio">
+				<div class="collapse navbar-collapse portfolio-collapse" id="portfolio">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
 							<a class="nav-link" style="font-size:14px" href="Portfolio/Code.html"> 
@@ -154,8 +228,8 @@
 					<img width=200vw src="Bio_Paint2.png"/>
 				</h1>
 				<h1 class="greeting" style="margin-bottom:5px;color:#ff7fab;">Hello!</h1>
-				<h1 class="subtitle" style="margin:0px;color:#5B9BD5;font-size:18px"> 
-					My name is Susan Xie. <br/> I enjoy art, tech, and design. 
+				<h1 class="subtitle" style="margin:0px; color:#5B9BD5; font-size:18px">
+					My name is Susan Xie. <br/> I enjoy art, tech, and design.
 				</h1>
 			</div>
 			<div class="d-none d-lg-inline" style="text-align:center"> 
@@ -165,9 +239,9 @@
 							<img width=100% src="Bio_Paint2.png"/>
 					</div>
 					<div style="margin-top:auto; margin-bottom:auto" class="col-lg-5">
-						<h1 class="greeting" style="margin-bottom:5px;color:#ff7fab;">Hello!</h1>
-						<h1 class="subtitle" style="margin:0px;color:#5B9BD5;font-size:1.5vw"> 
-							My name is Susan Xie. <br/> I enjoy art, tech, and how they can support each other 
+						<h1 class="greeting" style="margin-bottom:5px; color:#ff7fab;">Hello!</h1>
+						<h1 class="subtitle" style="margin:0px; color:#5B9BD5; font-size:1.5vw">
+							My name is Susan Xie. <br/> I enjoy art, tech, and how the two can support each other.
 						</h1>
 					</div>
 				</div>
@@ -176,8 +250,8 @@
 			<p class = "bio" style="text-align:left"> 
 				I'm interested in computer graphics and animation!
 				<br/>Previously @ <a href="https://www.imageworks.com/" target="_blank">
-				Sony Pictures Imageworks</a> in Vancouver. Currently @ 
-				<a href="https://www.pixar.com/" target="_blank">Pixar</a> 🍓
+				Sony Pictures Imageworks</a> (Vancouver, BC) and
+				<a href="https://www.pixar.com/" target="_blank">Pixar</a> (Emeryville, CA) 🍓
 			</p>
 		</div>
 	</div>
@@ -195,9 +269,32 @@
 						</iframe>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
+    
+    <div class="container-fluid" id = "portfolio">
+        <div id="portfolio-scroll">
+            <div class="row" style="margin-top:0px; margin-bottom:0px; border:0px; height:100%">
+                <div class="col-12 col-lg-4 code portfolio-boxes">
+                    <div class="portfolio-links">
+                        <p><a href="Portfolio/Code.html" class="subtitle"> code </a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 threeD portfolio-boxes">
+                    <div class="portfolio-links">
+                        <p><a href="Portfolio/3D.html" class="subtitle">modeling & &nbsp;<br/>&nbsp;&nbsp;&nbsp;simulation</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 art portfolio-boxes" style="background-color:green">
+                    <div class="portfolio-links">
+                        <p><a href="Portfolio/Art.html" class="subtitle"> art & design </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 	</div>
 	</div> 
 
@@ -219,6 +316,21 @@
 		$(".down-arrow").delay(1000).animate({
 			opacity: 0.3}, 700
 		);
+        
+        $(window).on('activate.bs.scrollspy', function (e, obj) {
+            var portfolioButton = $(".portfolio-collapse");
+            if (obj.relatedTarget == "#portfolio-scroll") {
+                portfolioButton.removeClass("collapse");
+                if (!portfolioButton.attr("aria-expanded")) {
+                    portfolioButton.animate({'height':'200px'}, 200)
+                }
+            } else {
+                portfolioButton.addClass("collapse");
+                if (!portfolioButton.attr("aria-expanded")) {
+                    portfolioButton.animate({'height':'0px'}, 200)
+                }
+            }
+        });
 
 	</script>
 
